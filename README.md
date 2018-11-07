@@ -13,10 +13,16 @@ SSDSE : [教育用標準データセット](https://www.nstac.go.jp/SSDSE/)（St
 - ([Data (.csv)](https://www.nstac.go.jp/SSDSE/SSDSE.csv))
 
 
-何かしらのデータ分析を`.iptnb`上で行う予定。
+何かしらのデータ分析を`.ipynb`上で行う予定。
 
+- データ成形・マンジング(必要？) 
+- 可視化 `matplolib.pyplot`
+- 分布の確認、正規性の検定等 `scipy`
+- 因子分析 `mca` `sklearn.decomposition.FactorAnalysis`
+- 多変量解析・多重回帰モデル選択・正則化GLM・変数選択 `sklearn`
+- その他
 
 ## [e-Stat](https://www.e-stat.go.jp/)
 
-政府のオープンデータセット。必要に応じてデータセットを探そう。
+政府のオープンデータセット。必要に応じて都道府県別・市町村別などのデータセットを探そう。
 
