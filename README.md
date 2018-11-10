@@ -10,11 +10,26 @@ SSDSE : [教育用標準データセット](https://www.nstac.go.jp/SSDSE/)（St
 
 > e-Statに収録されている「都道府県・市区町村のすがた（社会・人口統計体系）」の市区町村データから約100項目余を抜き出し、縦に市区町村、横にデータ項目が並ぶ表形式のデータに整備したものです
 
-
 - ([データ説明](https://www.nstac.go.jp/SSDSE/SSDSE2018_kaisetsu.pdf))
 - ([Data (.csv)](https://www.nstac.go.jp/SSDSE/SSDSE.csv))
 
-### aim
+### How
+
+ノートブック`.ipynb`を追加する形で分析を進める。ノートブック冒頭で`setup.py`を実行してくだせえ。
+
+```
+import setup
+
+setup()
+```
+
+`setup`により，以下のライブラリ・変数がつかるようになる。
+
+- numpy/scipy/matplotlib/
+- `ssdse`: `pandas.DataFrame`
+- `ssdse_per_capita`: `pandas.DataFrame`
+
+### Aim
 
 データ分析の練習とビジコン(？)への準備。
 
