@@ -20,14 +20,14 @@ SSDSE : [教育用標準データセット](https://www.nstac.go.jp/SSDSE/)（St
 ```
 import setup
 
-setup()
+ssdse = setup.ssdse()
 ```
 
 `setup`により，以下のライブラリ・変数がつかるようになる。
 
 - numpy/scipy/matplotlib/
-- `ssdse`: `pandas.DataFrame`
-- `ssdse_per_capita`: `pandas.DataFrame`
+- `ssdse.ssdse`: `pandas.DataFrame`
+- `ssdse.per_capita`: `pandas.DataFrame`
 
 ### Aim
 
