@@ -19,13 +19,10 @@ SSDSE : [教育用標準データセット](https://www.nstac.go.jp/SSDSE/)（St
 
 ```
 import setup
-
-ssdse = setup.ssdse()
 ```
 
 `setup`により，以下のライブラリ・変数がつかるようになる。
 
-- numpy/scipy/matplotlib/
 - `ssdse.ssdse`: `pandas.DataFrame`
 - `ssdse.per_capita`: `pandas.DataFrame`
 
@@ -37,7 +34,7 @@ ssdse = setup.ssdse()
 
 何かしらのデータ分析を`.ipynb`上で行う予定。
 
-- データ成形・マンジング(必要？) 
+- データ成形・マンジング(必要？)
 - 可視化 `matplolib.pyplot`
 - 分布の確認、正規性の検定等 `scipy`
 - 因子分析 `mca` `sklearn.decomposition.FactorAnalysis`
