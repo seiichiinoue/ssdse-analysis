@@ -23,6 +23,7 @@ Atsuya Kobayashi 2018-10-31
 
 ```
 import setup
+ssdse = setup.ssdse()
 ```
 
 `setup`により，以下のライブラリ・変数がつかるようになる。
