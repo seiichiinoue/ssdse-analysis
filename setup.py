@@ -22,16 +22,19 @@ class ssdse:
         
         self.ssdse = pd.read_csv(file_name, header=1)
 
-        f_per_capita = lambda x: (x / self.ssdse["人口総数"]) * 100
+        f_per_capita = lambda x: (x / self.ssdse["人口総数"])
         self.per_capita = self.ssdse.iloc[:, 3:].apply(f_per_capita)
         self.per_capita = pd.concat([self.ssdse.iloc[:, :3],
                                      self.per_capita], axis=1)
+       
+        self.per_capita = self.per_capita.drop(
+            self.per_capita[(self.ssdse["人口総数"] == 0)].index.values)
+        
         
         print("imported DataFrames from {}".format(file_name))
-
+        print(type(self.ssdse))
         display(self.ssdse.head(5))
 
 
 if (__name__ == "__main__") or (__name__ == "setup"):
-    ssdse = ssdse()
-    
+    print("Usage: import ssdse\nssdse = setup.ssdse()")
