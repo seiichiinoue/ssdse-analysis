@@ -1,6 +1,9 @@
 # ssdse-analysis
 
-Atsuya Kobayashi 2018-10-31
+- 2018-10-31
+- Contributer
+  - Atsuya Kobayashi
+  - Seiichi Inoue
 
 ---
 
